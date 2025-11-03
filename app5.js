@@ -105,7 +105,7 @@ app.get("/jankenradio", (req, res) => {
     win: win,
     total: total
   }
-  res.render( 'janken', display );
+  res.render( 'jankenradio', display );
 });
 
 app.listen(8080, () => console.log("Example app listening on port 8080!"));
