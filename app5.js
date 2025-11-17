@@ -4,6 +4,24 @@ const app = express();
 app.set('view engine', 'ejs');
 app.use("/public", express.static(__dirname + "/public"));
 
+let ramen = [
+  { id:1, code:"習志野市", name:"町田商店　新習志野駅前店"},
+  { id:2, code:"千葉市", name:"杉田家　千葉駅前店"},
+  { id:3, code:"千葉市", name:"蒙古タンメン中本　千葉店"},
+  { id:4, code:"千葉市", name:"野良裏家"},
+  { id:5, code:"松戸市", name:"中華蕎麦とみ田"},
+  { id:6, code:"柏市", name:"王道家　柏店"},
+];
+
+app.get("/ramen_add", (req, res) => {
+  let id = req.query.id;
+  let code = req.query.code;
+  let name = req.query.name;
+  let newdata = { id: id, code: code, name: name };
+  ramen.push( newdata );
+  res.render('db3', { data: ramen });
+});
+
 let station = [
   { id:1, code:"JE01", name:"東京駅"},
   { id:2, code:"JE07", name:"舞浜駅"},
