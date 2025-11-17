@@ -14,5 +14,17 @@
         <td><%= row.name %></td></tr>
       <% } %>
   </table>
+  <form action="/ramen_add">
+        <label for="id">ID</label>
+        <input type="number" name="id" id="id" required>
+
+        <label for="code">場所</label>
+        <input type="text" name="code" id="code" required>
+
+        <label for="name">店名</label>
+        <input type="text" name="name" id="name" required>
+
+        <input type="submit" values="登録">
+    </form>
 </body>
 </html>
