@@ -57,6 +57,14 @@ let station2 = [
 
 app.get("/keiyo2", (req, res) => {
   // 本来ならここにDBとのやり取りが入る
+  let id = req.query.id;
+  let code = req.query.code;
+  let name = req.query.name;
+  let change = req.query.change;
+  let passengers = req.query.passengers;
+  let distance = req.query.distance;
+  let newdata = { id: id, code: code, name: name, change: change, passengers: passengers, distance: distance };
+  station2.push( newdata );
   res.render('keiyo2', {data: station2} );
 });
 

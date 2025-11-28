@@ -16,5 +16,26 @@
         <% number += 1 %>
       <% } %>
   </table>
+  <form action="/keiyo2">
+        <label for="id">ID</label>
+        <input type="number" name="id" id="id" required>
+
+        <label for="code">駅コード</label>
+        <input type="text" name="code" id="code" required>
+
+        <label for="name">駅名</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="change">乗り換え線</label>
+        <input type="text" name="change" id="change" required>
+
+        <label for="passengers">乗客数</label>
+        <input type="text" name="passengers" id="passengers" required>
+
+        <label for="distance">東京駅からの距離</label>
+        <input type="text" name="distance" id="distance" required>
+
+        <input type="submit" values="登録">
+  </form>
 </body>
 </html>
