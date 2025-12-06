@@ -13,9 +13,10 @@
   - [ ] ページ遷移図の作成 :writing_hand:
   - [ ] 仕様書の構成の検討 :book:
   - [ ] 概要 :writing_hand:
-  - [ ] HTTPメソッドとリソース名一覧 :writing_hand:
-  - [ ] データ構造 :writing_hand:
+  - [ ] HTTPメソッドとリソース名一覧 
   - [ ] リソース名ごとの機能の詳細 :writing_hand:
+  - [ ] データ構造 :writing_hand:
+  - [ ] ページ遷移:writing_hand:
 - [ ] 管理者向け仕様書の構成
   - [ ] 仕様書の構成の検討 :book:
   - [ ] インストールから起動までの手順確認 :computer:
