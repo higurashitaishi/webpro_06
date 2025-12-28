@@ -233,6 +233,7 @@ app.post("/onsen/update/:number", (req, res) => {
   res.redirect('/onsen' );
 });
 
+
 let station = [
   { id:1, code:"JE01", name:"東京駅"},
   { id:2, code:"JE07", name:"舞浜駅"},
