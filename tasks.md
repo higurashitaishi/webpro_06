@@ -18,13 +18,13 @@
   - [ ] データ構造 :writing_hand:
   - [ ] ページ遷移:writing_hand:
 - [ ] 管理者向け仕様書の構成
-  - [ ] 仕様書の構成の検討 :book:
-  - [ ] インストールから起動までの手順確認 :computer:
-  - [ ] インストール方法 :writing_hand:
-  - [ ] 起動方法 :writing_hand:
-  - [ ] 起動できない場合 :writing_hand:
-  - [ ] 終了方法 :writing_hand:
-  - [ ] 分かっている不具合 :writing_hand:
+  - [x] 仕様書の構成の検討 :book:
+  - [x] インストールから起動までの手順確認 :computer:
+  - [x] インストール方法 :writing_hand:
+  - [x] 起動方法 :writing_hand:
+  - [x] 起動できない場合 :writing_hand:
+  - [x] 終了方法 :writing_hand:
+  - [x] 分かっている不具合 :writing_hand:
 - [ ] 利用者向け仕様書の作業
   - [ ] 仕様書の構成の検討 :book:
   - [ ] スクリーンショットの保存と整理 :computer:

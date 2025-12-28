@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +7,7 @@
 </head>
 <body>
     <h2>以下のラーメン屋データを削除しますか？</h2>
-    <p>屋名: <%= data.name %></p>
+    <p>ラーメン屋名: <%= data.name %></p>
     <form action="/ramen/delete/<%= id %>" method="GET">
         <button type="submit" style="color: red;">削除</button>
         <a href="/ramen">キャンセル</a>

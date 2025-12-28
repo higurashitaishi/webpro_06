@@ -9,19 +9,13 @@
   
   <table>
   <tr>
-    <th>最寄駅</th><th>ラーメン屋名</th><th>おすすめ商品</th> <th>操作</th>
+    <th>ラーメン屋名</th> <th>操作</th>
   </tr>
   <% let number = 0 %>
   <% for( let row of data ) { %>
     <tr>
       <td>
-        <a href="/ramen/<%= number %>"><%= row.moyori %></a>
-      </td>
-      <td>
         <a href="/ramen/<%= number %>"><%= row.name %></a>
-      </td>
-      <td>
-        <a href="/ramen/<%= number %>"><%= row.choice %></a>
       </td>
       <td>
         <a href="/ramen/confirm_delete/<%= number %>">削除</a>

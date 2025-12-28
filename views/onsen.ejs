@@ -9,19 +9,13 @@
   
   <table>
   <tr>
-    <th>所在地</th><th>温泉名</th><th>温度</th> <th>操作</th>
+    <th>温泉名</th> <th>操作</th>
   </tr>
   <% let number = 0 %>
   <% for( let row of data ) { %>
     <tr>
       <td>
-        <a href="/onsen/<%= number %>"><%= row.place %></a>
-      </td>
-      <td>
         <a href="/onsen/<%= number %>"><%= row.name %></a>
-      </td>
-      <td>
-        <a href="/onsen/<%= number %>"><%= row.degree %></a>
       </td>
       <td>
         <a href="/onsen/confirm_delete/<%= number %>">削除</a>

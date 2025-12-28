@@ -189,7 +189,7 @@ app.get("/onsen/:number", (req, res) => {
 app.get("/onsen/confirm_delete/:number", (req, res) => {
   // 削除の確認画面を表示する
   const number = req.params.number;
-  const detail = ramenitiran[number];
+  const detail = onsenitiran[number];
   res.render('onsen_delete', {id: number, data: detail});
 });
 

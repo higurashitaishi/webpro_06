@@ -6,7 +6,7 @@
 </head>
 <body>
     <h2>以下の野球選手データを削除しますか？</h2>
-    <p>駅名: <%= data.name %></p>
+    <p>選手名: <%= data.name %></p>
     <form action="/baseball/delete/<%= id %>" method="GET">
         <button type="submit" style="color: red;">削除</button>
         <a href="/baseball">キャンセル</a>

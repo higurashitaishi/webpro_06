@@ -9,19 +9,13 @@
   
   <table>
   <tr>
-    <th>所属チーム</th><th>ポジション</th><th>背番号</th><th>名前</th> <th>操作</th>
+    <th>所属チーム</th><th>名前</th> <th>操作</th>
   </tr>
   <% let number = 0 %>
   <% for( let row of data ) { %>
     <tr>
       <td>
         <a href="/baseball/<%= number %>"><%= row.team %></a>
-      </td>
-      <td>
-        <a href="/baseball/<%= number %>"><%= row.position %></a>
-      </td>
-      <td>
-        <a href="/baseball/<%= number %>"><%= row.num %></a>
       </td>
       <td>
         <a href="/baseball/<%= number %>"><%= row.name %></a>
