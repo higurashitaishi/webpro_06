@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>削除の確認</title>
+</head>
+<body>
+    <h2>以下の温泉データを削除しますか？</h2>
+    <p>温泉名: <%= data.name %></p>
+    <form action="/onsen/delete/<%= id %>" method="GET">
+        <button type="submit" style="color: red;">削除</button>
+        <a href="/onsen">キャンセル</a>
+    </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><%= data.name %></title>
+</head>
+<body>
+  <h2><%= data.name %>の編集</h2>
+  <form action="/onsen/update/<%= data.id - 1 %>" method="POST">
+    <input type="hidden" name="id" value="<%= data.id %>">
+    
+    <table>
+      <tr><th>項目</th><th>データ</th></tr>
+      <tr><td>所在地</td><td><input type="text" name="place" value="<%= data.place %>"></td></tr>
+      <tr><td>温泉名</td><td><input type="text" name="name" value="<%= data.name %>"></td></tr>
+      <tr><td>温度</td><td><input type="text" name="degree" value="<%= data.degree %>"></td></tr>
+    </table>
+    <input type="submit" value="登録"> </form>
+  <a href="/onsen/">温泉一覧に戻る</a>
+</body>
+</html>

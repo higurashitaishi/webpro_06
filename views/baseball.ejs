@@ -1,0 +1,39 @@
+<!Doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>野球選手</title>
+</head>
+<body>
+  <h2>野球選手の詳細</h2>
+  
+  <table>
+  <tr>
+    <th>所属チーム</th><th>ポジション</th><th>背番号</th><th>名前</th> <th>操作</th>
+  </tr>
+  <% let number = 0 %>
+  <% for( let row of data ) { %>
+    <tr>
+      <td>
+        <a href="/baseball/<%= number %>"><%= row.team %></a>
+      </td>
+      <td>
+        <a href="/baseball/<%= number %>"><%= row.position %></a>
+      </td>
+      <td>
+        <a href="/baseball/<%= number %>"><%= row.num %></a>
+      </td>
+      <td>
+        <a href="/baseball/<%= number %>"><%= row.name %></a>
+      </td>
+      <td>
+        <a href="/baseball/confirm_delete/<%= number %>">削除</a>
+      </td>
+    </tr>
+    <% number += 1 %>
+  <% } %>
+</table>
+
+  <a href="/baseball/create">野球選手を追加</a>
+</body>
+</html>

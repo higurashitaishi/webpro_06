@@ -1,0 +1,19 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><%= data.name %></title>
+</head>
+<body>
+  <h2><%= data.name %>の詳細</h2>
+  <table>
+    <tr><th>項目</th><th>データ</th></tr>
+    <tr><td>最寄駅</td><td><%= data.moyori %></td></tr>
+    <tr><td>店名</td><td><%= data.name %></td></tr>
+    <tr><td>おすすめ商品</td><td><%= data.choice %></td></tr>
+  </table>
+  <br>
+  <a href="/ramen/edit/<%= id %>">編集</a>
+  <a href="/ramen">ラーメン屋一覧に戻る</a>
+</body>
+</html>

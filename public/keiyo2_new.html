@@ -2,21 +2,28 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>じゃんけん</title>
+    <title>新規登録</title>
 </head>
 <body>
+    <h2>駅の新規登録</h2>
     <form action="/keiyo2" method="POST">
-        <input type="text" name="code" required>
-        <label for="code">code:</label><br>
-        <input type="text" name="name" required>
-        <label for="name">name:</label><br>
-        <input type="text" name="change">
-        <label for="change">change:</label><br>
-        <input type="text" name="passengers" required>
-        <label for="passengers">passengers:</label><br>
-        <input type="text" name="distance" required>
-        <label for="distance">distance:</label><br>
-        <input type="submit" values="登録">
-    </form>
+        <label for="code">駅コード:</label><br>
+        <input type="text" id="code" name="code" required><br><br>
+
+        <label for="name">駅名:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="change">乗り換え線:</label><br>
+        <input type="text" id="change" name="change"><br><br>
+
+        <label for="passengers">乗降客数:</label><br>
+        <input type="text" id="passengers" name="passengers" required><br><br>
+
+        <label for="distance">東京駅からの距離:</label><br>
+        <input type="text" id="distance" name="distance" required><br><br>
+
+        <input type="submit" value="登録"> </form>
+    <br>
+    <a href="/keiyo2">一覧に戻る</a>
 </body>
 </html>

@@ -1,0 +1,36 @@
+<!Doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>温泉</title>
+</head>
+<body>
+  <h2>温泉の詳細</h2>
+  
+  <table>
+  <tr>
+    <th>所在地</th><th>温泉名</th><th>温度</th> <th>操作</th>
+  </tr>
+  <% let number = 0 %>
+  <% for( let row of data ) { %>
+    <tr>
+      <td>
+        <a href="/onsen/<%= number %>"><%= row.place %></a>
+      </td>
+      <td>
+        <a href="/onsen/<%= number %>"><%= row.name %></a>
+      </td>
+      <td>
+        <a href="/onsen/<%= number %>"><%= row.degree %></a>
+      </td>
+      <td>
+        <a href="/onsen/confirm_delete/<%= number %>">削除</a>
+      </td>
+    </tr>
+    <% number += 1 %>
+  <% } %>
+</table>
+
+  <a href="/onsen/create">温泉を追加</a>
+</body>
+</html>

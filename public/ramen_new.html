@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>新規登録</title>
+</head>
+<body>
+    <h2>ラーメン屋の新規登録</h2>
+    <form action="/ramen" method="POST">
+        <label for="code">最寄駅:</label><br>
+        <input type="text" id="moyori" name="moyori" required><br><br>
+        <label for="name">店名:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="change">おすすめ商品:</label><br>
+        <input type="text" id="choice" name="choice"><br><br>
+        <input type="submit" value="登録"> </form>
+    <br>
+    <a href="/ramen">一覧に戻る</a>
+</body>
+</html>

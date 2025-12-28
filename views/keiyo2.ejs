@@ -1,42 +1,30 @@
 <!Doctype html>
-<html>
+<html lang="ja">
 <head>
   <meta charset="utf-8">
   <title>京葉線の駅</title>
 </head>
 <body>
   <h2>京葉線の駅の詳細</h2>
+  
   <table>
-    <tr><th>ID</th><th>駅コード</th><th>駅名</th></tr>
-      <% let number = 0 %>
-      <% for( let row of data ) { %>
-        <tr><td><%= row.id %></td>
-        <td><%= row.code %></td>
-        <td><a href="/keiyo2/<%= number %>"><%= row.name %></a></td></tr>
-        <% number += 1 %>
-      <% } %>
-  </table>
-  <a href="/keiyo2/create">追加</a>
-  <form action="/keiyo2">
-        <label for="id">ID</label>
-        <input type="number" name="id" id="id" required>
+  <tr>
+    <th>駅名</th> <th>操作</th>
+  </tr>
+  <% let number = 0 %>
+  <% for( let row of data ) { %>
+    <tr>
+      <td>
+        <a href="/keiyo2/<%= number %>"><%= row.name %></a>
+      </td>
+      <td>
+        <a href="/keiyo2/confirm_delete/<%= number %>">削除</a>
+      </td>
+    </tr>
+    <% number += 1 %>
+  <% } %>
+</table>
 
-        <label for="code">駅コード</label>
-        <input type="text" name="code" id="code" required>
-
-        <label for="name">駅名</label>
-        <input type="text" name="name" id="name" required>
-
-        <label for="change">乗り換え線</label>
-        <input type="text" name="change" id="change" required>
-
-        <label for="passengers">乗客数</label>
-        <input type="text" name="passengers" id="passengers" required>
-
-        <label for="distance">東京駅からの距離</label>
-        <input type="text" name="distance" id="distance" required>
-
-        <input type="submit" values="登録">
-  </form>
+  <a href="/keiyo2/create">新規駅を追加</a>
 </body>
 </html>
